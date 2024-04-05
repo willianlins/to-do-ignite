@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import './global.css'
 
 export function App() {
 
   return (
     <>
-      <h1>testesada</h1>
+      <h1>testestyrwqeqtyada</h1>
     </>
   )
 }
