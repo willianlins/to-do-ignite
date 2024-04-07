@@ -1,0 +1,6 @@
+.containerHeader{
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  background: var(--gray-700);
+}

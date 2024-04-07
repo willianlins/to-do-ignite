@@ -1,0 +1,62 @@
+.container{
+  width: 46rem;
+  margin: 0 auto;
+
+  padding: 1rem;
+}
+
+.container main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerList{
+  margin-top: 3.125rem;
+  width: 100%;
+}
+
+.containerListInfo{
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.containerListInfoTasks {
+  color: var(--blue-100);
+}
+
+.containerListInfoFinished{
+  color: var(--purple-100);
+}
+
+.containerListInfoTasks strong, .containerListInfoFinished strong{
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  color: var(--gray-100);
+  margin-left: 0.5rem;
+}
+
+.containerListsToDo{
+  margin-top: 1.5rem;
+}
+
+.containerListsTodoEmpty{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  border-top: 1px solid var(--gray-400);
+  color: var(--gray-300);
+  line-height: 140%;
+}
+
+.containerListsTodoEmpty svg{
+  margin-bottom: 1rem;
+}
