@@ -1,53 +1,50 @@
 .contentListTodo{
   display: grid;
-  grid-template-columns: 1fr 1.5rem; 
+  grid-template-columns: 1.125rem 1fr 1.5rem; 
+  align-items: start;
   gap: 1rem;
   background: var(--gray-500);
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid var(--gray-400);
-  position: relative;
+}
+
+.contentListTodo + .contentListTodo{
+  margin-top: 1rem;
+}
+
+.contentListTodo input[type=checkbox] + label {
+  cursor: pointer;
 }
 
 .contentListTodo input[type=checkbox] {
-  visibility: hidden;
-  width: 0;
-}
-
-.contentListTodo > div {
-display: flex; flex-direction: row;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid var(--blue-100);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
   cursor: pointer;
-  /* border: 2px solid var(--blue-100); */
-  border-radius: 50%;
-  /* position: absolute; */
 }
 
-.contentListTodo > div label::before{
-  content: '';
-  width: 0.9rem;
-  height: 0.9rem;
-  border: 2px solid var(--blue);
-  border-radius: 50%;
-  margin-right: 1.3rem;
-  color: var(--gray-100);
+.contentListTodo input[type=checkbox]:checked  {
+  appearance: auto;
+  accent-color: var(--purple-500);
+  clip-path: circle(50% at 50% 50%);
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
-.contentListTodo > div input[type="checkbox"]:checked + label:before {
-  content: '\002714';
-  background-color: var(--puple-dark);
-  border-color: var(--puple-dark);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contentListTodo > div input[type="checkbox"]:checked + label {
-  /* background-color: var(--purple-500); */
-  /* border-color: var(--purple-500); */
-}
-
-.contentListTodo input[type="checkbox"]:checked + label{
+.contentListTodo input[type=checkbox]:checked + label{
   text-decoration: line-through;
   color: var(--gray-300);
+}
+
+.contentListTodo button {
+  background: transparent;
+  border: 0;
 }
 
 .contentListTodo svg {
