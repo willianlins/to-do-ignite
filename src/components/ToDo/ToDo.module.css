@@ -9,6 +9,10 @@
   border: 1px solid var(--gray-400);
 }
 
+.contentListTodoNoBorder {
+  border: 0;
+}
+
 .contentListTodo + .contentListTodo{
   margin-top: 1rem;
 }

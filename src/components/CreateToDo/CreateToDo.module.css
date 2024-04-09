@@ -1,7 +1,6 @@
 .wrapperCreate{
   width: 100%;
   margin-top: -2.813rem;
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,6 +34,11 @@
   color: var(--gray-100);
 
   transition: background-color 0.2s;
+}
+
+.wrapperCreate button:disabled{
+  cursor: not-allowed;
+  filter: brightness(0.6);
 }
 
 .wrapperCreate button:not(:disabled):hover{
